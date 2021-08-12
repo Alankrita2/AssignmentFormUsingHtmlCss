@@ -1,0 +1,104 @@
+body{
+    padding: 0.5em 0.5em 1em;
+}
+
+
+
+.personal-details{
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    margin: 1em;
+    padding: 0.5em 1em 1em;
+
+}
+
+.personal-details #personal-header{
+    margin-top:-17px;
+    background: white;
+    width: 113px;
+}
+
+.check-box{
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    margin: 1em;
+    padding: 0.5em 1em 1em;
+}
+
+.political-education{
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    margin: 1em;
+    padding: 0.5em 1em 1em;
+}
+
+.essay-section{
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    margin: 1em;
+    padding: 0em 1em 1em;
+}
+.essay-section #essay-header{
+    margin-top:-10px;
+    background: white;
+    width: 95px;
+}
+
+
+input[type="file" ] {
+    appearance: none;
+    background-color: initial;
+    cursor: default;
+    align-items: baseline;
+    color: transparent;
+    text-overflow: ellipsis;
+    white-space: pre;
+    text-align: start !important;
+    padding: initial;
+    border: initial;
+    overflow: hidden !important;
+}
+
+input[type="text"] {
+    padding: 1px 2px;
+    color: gray;
+}
+
+input[type="email"] {
+    padding: 1px 2px;
+    color: gray;
+}
+
+input[type="date"] {
+    padding: 1px 2px;
+    color: gray;
+}
+
+textarea{
+    margin: 0.5em;
+    color: gray;
+}
+
+.file::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+
+.file::before {
+    content: "Attach Files";
+    display: inline-block;
+    background: red;
+    padding: 0.25em;
+    color: white;
+  }
+  
+
+
+.submit{
+        color: #ffffff;
+        background-color: red;
+        margin-left: 650px;
+}
