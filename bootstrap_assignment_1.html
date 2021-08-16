@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Assignment 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+      body{
+        background-color: white;
+      }
+
+      .container{
+        background-color: white;
+        text-align: left;
+        margin: 2%;
+        padding: auto;
+      }
+
+      .personal-details{
+        border-style: solid;
+        border-color: gray;
+        border-width: 1px;
+        margin: 1em;
+        padding: 0em 1em 1em;
+      }
+
+      .personal-details p{
+        margin-top:-11px;
+        background: white;
+        width: 112px;
+      }
+
+      .checkbox{
+       border-style: solid;
+       border-color: gray;
+       border-width: 1px;
+       margin: 1em;
+       padding: 0.5em 1em 1em;
+      }
+
+      .political-education{
+       border-style: solid;
+       border-color: gray;
+       border-width: 1px;
+       margin: 1em;
+       padding: 0.5em 1em 1em;
+      }
+
+      .essay-section{
+       border-style: solid;
+       border-color: gray;
+       border-width: 1px;
+       margin: 1em;
+       padding: 0em 1em 0em;
+      }
+
+      .essay-section p{
+        margin-top:-10px;
+        background: white;
+        width: 95px;
+      }
+
+      
+input[type="file" ] {
+    appearance: none;
+    background-color: initial;
+    cursor: default;
+    align-items: baseline;
+    color: transparent;
+    text-overflow: ellipsis;
+    white-space: pre;
+    text-align: start !important;
+    padding: initial;
+    border: initial;
+    overflow: hidden !important;
+}
+
+.file{
+    display: block;
+}
+
+.file::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+
+.file::before{
+    content: "Attach Files";
+    display: inline-block;
+    background-color: red;
+    color: white;
+}
+
+input[type="text"] {
+    padding: 1px 2px;
+    color: gray;
+}
+
+input[type="email"] {
+    padding: 1px 2px;
+    color: gray;
+}
+
+input[type="date"] {
+    padding: 1px 2px;
+    color: gray;
+}
+
+.btn-block{
+    background-color: red;
+    color: white;
+    width: 200px;
+    text-align: center;
+    margin-left: 40%;
+    margin-bottom: 2%;
+}
+
+textarea{
+    margin: 0.5em;
+    color: gray;
+}
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="container">
+    <header>
+        <p><b>Note:</b> Form is to be completed at least 21 days prior to date</p>
+    </header>
+  <form action="/action_page.php">
+    <div class="personal-details">
+    
+    <p><b>Personal Details</b></p>
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter name here" name="name">
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <input type="text" id="address" placeholder="Enter address here" name="address">
+      </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+        <label for="phone-no">Phone Number:</label>
+        <input type="text" id="phone-no" placeholder="Enter 10 digit number" name="phone-no">
+    </div>
+    <div class="form-group">
+        <label for="iq">IQ:</label>
+        <input type="text" id="iq" placeholder="Enter IQ here" name="iq">
+    </div>
+    <div class="form-group">
+        <p>Gender</p>
+        <label><input type="radio" id="male" name="gender" value="Male" checked>Male</label><br>
+        <label><input type="radio" id="female" name="gender" value="Female">Female</label><br>
+        <label><input type="radio" id="other" name="gender" value="Other">Other</label><br>
+    </div>
+    <div class="form-group">
+        <label for="date">Date of Proposed Outing:</label>
+        <input type="date" id="date" name="date">
+    </div>
+
+    </div>
+
+
+
+    <div class="checkbox">
+        <p>Check All That Apply</p>
+
+        <label><input type="checkbox" id="info1" name="info1" >I have tattoos and/or piercings</label><br>   
+        <label><input type="checkbox" id="info2" name="info2" >I am more than 2 years older than my daughter</label><br>      
+        <label><input type="checkbox" id="info3" name="info3" > I own a panel van or V8 ute</label><br>     
+        <label><input type="checkbox" id="info4" name="info4" checked> I work full-time</label><br>      
+        <label><input type="checkbox" id="info5" name="info5" checked> My parents are rich</label><br>
+        <label><input type="checkbox" id="info6" name="info6" checked> Is the date at a well lit public location</label><br>
+    </div>
+
+    
+    <div class="form-group">
+        <div class="political-education">
+            <label for="politics">Political Persuassion:</label>
+            <select id="politics">
+                <option value="Left Wing" selected>Left Wing</option>
+                <option value="Right Wing">Right Wing</option>
+            </select>
+    
+            <label for="education">Education Level Completed:</label>
+            <select id="education">
+                <option value="High School">High School</option>
+                <option value="HSC(10+2)">HSC(10+2)</option>
+                <option value="Diploma">Diploma</option>
+                <option value="University" selected>University</option>
+            </select>
+          </div>
+    </div>
+
+    <div class="essay-section">
+        <p><b>Essay Section</b></p>
+        <div class="form-group">
+            <label for=" msg1">In 50 words or more explain why you want to date my daughter</label>
+            <textarea class="form-control" rows="5" cols="50" id="msg1">Enter text here</textarea>
+        </div>
+               
+        <div class="form-group">
+            <label for=" msg2">Please upload contact details for 2 references</label>
+            <textarea class="form-control" rows="5" cols="50" id="msg2">Enter text here</textarea>
+        </div>
+        <div class="form-group"></div>
+            <label for="myfile">Upload Police Clearance Certificate, Bank Statement and Medical Certificates here:</label>
+            <input type="file" id="myfile" name="myfile" class="file" multiple title=" "/>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-block">Send Your Application</button>
+  </form>
+</div>
+
+</body>
+</html>
